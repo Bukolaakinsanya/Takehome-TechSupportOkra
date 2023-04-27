@@ -1,0 +1,46 @@
+NON-TECHNICAL.
+
+For situations like this, it is ideal to have another review session with all stakeholders. This will comprise of the client's dev team, okra's dev team, tech support, QA and maybe the project manager.
+We will request for the client to outline their issues and we will start with the most critical to the least critical. This will help us understand the root cause of each issue and the approach to resolving them. 
+At the same time, we will communicate clear timelines for each issue (i.e., how long it'll take for each one of them to be resolved, more like a tracking sheet). At every point in time, I will carry the client along to avoid any communication gap and them taking the business away from us.
+
+
+SEMI-TECHNICAL.
+
+1. For this kind of issue, i'll use the scenario of the database update and endpoint provided (it does not have the option of querying with date selection). It's possible the backend data has not been updated for the latest transaction report to be made available to Jesse since the endpoint used for querying does not allow filtering or querying by date.  
+
+Hello Jesse,
+
+I'm so sorry about your experience using the service. 
+
+We will work on this and give you a feedback in due course.
+
+However, you can use this endpoint which allows you filter the transactions by date https://api.okra.ng/v2/transactions/getByDate
+
+Please let me know if this helps.
+
+Our sincere apologies once again on your experience using our service.
+
+
+2. Hello Mike,
+
+You can programmatically identify a successful or failed connection from the error message or error code thrown. Kindly refer to the Widgets section under "Errors" in the API documentation to see all possible errors using this link https://docs.okra.ng/docs/widget-errors 
+
+
+3. Hello Blessing,
+
+Thank you for your interest in using Okra's services.
+
+To get started with testing for free, please follow the URL https://okra.ng/pricing to register. Upon successful registration, you can proceed to our API documentation using this link https://docs.okra.ng/docs
+
+The free pricing feature gives you access to 100 free API calls, unlimited test credentials, developer's support, etc.
+
+Do feel free to let me know if you require additional information or clarification.
+
+
+TECHNICAL.
+
+1. From my test and observation, the endpoint/route provided https://docs.okra.ng/reference/fetchauths looks like the page does not exist on postman. It's a frontend direct route to the fetchauth section in the API documentation. And from the documentation, i got the correct endpoint as https://api.okra.ng/v2/products/auths and using the bearer token and payload provided, i got a successful response.
+
+2. The same thing also applies in this case just as number 1. the endpoint/route provided https://docs.okra.ng/reference/getidentitybydate looks like the page does not exist on postman. It's a frontend direct route to the fetchauth section in the API documentation. And from the documentation, i got the correct endpoint as 
+https://api.okra.ng/v2/identity/getByDate and using the bearer token and payload provided, although i got an error showing that the payload is incomplete (i.e., no date range provided) it shows the endpoint is working.
